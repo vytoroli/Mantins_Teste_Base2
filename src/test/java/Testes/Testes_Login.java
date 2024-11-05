@@ -22,8 +22,8 @@ public class Testes_Login {
 
     @Test
     public void testLogin_Sem_Sucesso() {
-        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
+        driver.get("http://mantis-prova.base2.com.br");
         loginPage.setUsername("Victor_Costa");
         loginPage.Entrar();
         loginPage.setPassword("vytor@1234");
@@ -36,6 +36,7 @@ public class Testes_Login {
 
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
+        driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.validateHomePage();
     }
