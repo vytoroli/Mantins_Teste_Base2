@@ -28,7 +28,7 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    public void getLoginPage() {
+    public void getLoginPage(WebDriver driver) {
         driver.get("http://mantis-prova.base2.com.br");
     }
 
