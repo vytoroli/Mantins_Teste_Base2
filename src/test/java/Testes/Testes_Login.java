@@ -10,13 +10,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class Testes_Login {
-    WebDriver driver;
+   private WebDriver driver;
 
     @Before
     public void setUp() {
 //        Driver wdriver = new Driver();
 //        driver = wdriver.Webdriver();
-        Driver Webdriver = new Driver();
         driver = Driver.Webdriver();
 
     }

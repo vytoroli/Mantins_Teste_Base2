@@ -13,14 +13,13 @@ import org.openqa.selenium.WebDriver;
 import static org.junit.Assert.assertEquals;
 
 public class Testes_Tarefas {
-    WebDriver driver;
+    private WebDriver driver;
 
     @Before
     public void setUp() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
 //        Driver wdriver = new Driver();
 //        driver = wdriver.Webdriver();
-        Driver Webdriver = new Driver();
         driver = Driver.Webdriver();
     }
 
