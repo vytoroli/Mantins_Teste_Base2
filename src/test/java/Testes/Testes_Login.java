@@ -24,6 +24,7 @@ public class Testes_Login {
     @Test
     public void testLogin_Sem_Sucesso() {
         LoginPage loginPage = new LoginPage(driver);
+        loginPage.getLoginPage();
         loginPage.setUsername("Victor_Costa");
         loginPage.Entrar();
         loginPage.setPassword("vytor@1234");

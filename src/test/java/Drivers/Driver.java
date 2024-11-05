@@ -1,21 +1,21 @@
-package Drivers;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.WebDriver;
-
-public class Driver {
-
-    public WebDriver Webdriver() {
-        // Caminho para o WebDriver do Chrome (ou outro navegador)
-
-
-       // System.setProperty("webdriver.chrome.driver", "/users/victoroliveira/drivers/chromedriver");
-        System.setProperty("webdriver.chrome.driver", "/home/runner/work/Martins_Teste_Base2/Martins_Teste_Base2/src/test/java/Drivers/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("http://mantis-prova.base2.com.br");
-        return driver;
-    }
-}
+//package Drivers;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.WebDriver;
+//
+//public class Driver {
+//
+//    public WebDriver Webdriver() {
+//        // Caminho para o WebDriver do Chrome (ou outro navegador)
+//
+//
+//       // System.setProperty("webdriver.chrome.driver", "/users/victoroliveira/drivers/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "/home/runner/work/Martins_Teste_Base2/Martins_Teste_Base2/src/test/java/Drivers/chromedriver");
+//        WebDriver driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//        driver.get("http://mantis-prova.base2.com.br");
+//        return driver;
+//    }
+//}
 
 //
 //package Drivers;

@@ -10,6 +10,7 @@ import static org.junit.Assert.assertEquals;
 
 public class LoginPage {
     private WebDriver driver;
+
     @FindBy(how = How.ID, using = "username")
     private WebElement username;
 
@@ -25,6 +26,10 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
+    }
+
+    public void getLoginPage() {
+        driver.get("http://mantis-prova.base2.com.br");
     }
 
     public void setUsername(String usuario) {
