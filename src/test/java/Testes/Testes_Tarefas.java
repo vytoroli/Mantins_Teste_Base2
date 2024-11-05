@@ -1,5 +1,7 @@
 package Testes;
 
+import Drivers.ConfiguracaoWebDriver;
+import Drivers.Driver;
 import PageObjects.CreateTaskPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
@@ -20,7 +22,7 @@ public class Testes_Tarefas {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
 //        Driver wdriver = new Driver();
 //        driver = wdriver.Webdriver();
-        driver = Driver.Webdriver();
+        driver = ConfiguracaoWebDriver.configurarChromeDriver();
     }
 
     @Test
