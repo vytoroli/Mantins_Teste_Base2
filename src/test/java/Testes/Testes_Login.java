@@ -1,7 +1,6 @@
 package Testes;
 
 import Drivers.ConfiguracaoWebDriver;
-import Drivers.Driver;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -23,8 +22,8 @@ public class Testes_Login {
 
     @Test
     public void testLogin_Sem_Sucesso() {
+        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.getLoginPage(driver);
         loginPage.setUsername("Victor_Costa");
         loginPage.Entrar();
         loginPage.setPassword("vytor@1234");

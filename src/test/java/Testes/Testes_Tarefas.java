@@ -1,7 +1,6 @@
 package Testes;
 
 import Drivers.ConfiguracaoWebDriver;
-import Drivers.Driver;
 import PageObjects.CreateTaskPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
