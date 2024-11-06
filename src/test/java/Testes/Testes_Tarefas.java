@@ -16,7 +16,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import static org.junit.Assert.assertEquals;
 
 public class Testes_Tarefas {
-    public static WebDriver driver;
+    private WebDriver driver;
 
     @Before
     public void setUp() {

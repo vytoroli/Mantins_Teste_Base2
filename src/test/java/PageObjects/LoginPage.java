@@ -9,8 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import static org.junit.Assert.assertEquals;
 
 public class LoginPage {
-  //  private WebDriver driver;
-  public static WebDriver driver=null;
+   private WebDriver driver;
 
     @FindBy(how = How.ID, using = "username")
     private WebElement username;
