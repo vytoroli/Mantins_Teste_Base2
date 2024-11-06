@@ -1,5 +1,6 @@
 package Drivers;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,9 +9,10 @@ public class Driver {
 
     public WebDriver Webdriver() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
+       WebDriverManager.chromedriver().setup();
 
         // System.setProperty("webdriver.chrome.driver", "/users/victoroliveira/drivers/chromedriver");
-        System.setProperty("webdriver.chrome.driver", "/home/runner/work/Martins_Teste_Base2/Martins_Teste_Base2/src/test/java/Drivers/chromedriver");
+       // System.setProperty("webdriver.chrome.driver", "/home/runner/work/Martins_Teste_Base2/Martins_Teste_Base2/src/test/java/Drivers/chromedriver");
 //        WebDriver driver = new ChromeDriver();
      //   driver.manage().window().maximize();
         ChromeOptions options = new ChromeOptions();
