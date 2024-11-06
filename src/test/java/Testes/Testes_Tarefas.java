@@ -116,6 +116,7 @@ public class Testes_Tarefas {
     @After
     public void tearDown() {
         // Fechar o navegador após o teste
-        driver.quit();
+        driver.close();
+        //driver.quit();
     }
 }
