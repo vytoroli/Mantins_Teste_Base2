@@ -1,6 +1,7 @@
 package Testes;
 
 // import Drivers.Driver;
+
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -14,13 +15,14 @@ import java.util.concurrent.TimeUnit;
 
 
 public class Testes_Login {
-   // private WebDriver driver;
-   public static WebDriver driver;
+    // private WebDriver driver;
+    public static WebDriver driver;
+
     @Before
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless","--no-sandbox");
-        driver =new ChromeDriver(options);
+        options.addArguments("--headless", "--no-sandbox");
+        driver = new ChromeDriver(options);
 
 
         // driver = Driver.configurarChromeDriver();
@@ -47,7 +49,6 @@ public class Testes_Login {
     public void test_Login_Com_Sucesso() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.validateHomePage();
