@@ -51,6 +51,7 @@ public class Testes_Tarefas {
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
         driver.get("http://mantis-prova.base2.com.br");
+        Thread.sleep(5000);
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.validateHomePage();
         taskPage.verTarefa();
