@@ -53,10 +53,16 @@ public class LoginPage {
     }
 
 
-    public void alertaDesativado() {
+    /*public void alertaDesativado() {
         WebElement element = alertaDesativado;
         String texto = element.getText();
         assertEquals("Sua conta pode estar desativada ou bloqueada ou o nome de usuário e a senha que você digitou não estão corretos.", texto);
+    }*/
+
+    public void alertaDesativado() {
+        WebElement element = alertaDesativado;
+        String texto = element.getText();
+        assertEquals("Your account may be disabled or blocked or the username/password you entered is incorrect.", texto);
     }
 
 
