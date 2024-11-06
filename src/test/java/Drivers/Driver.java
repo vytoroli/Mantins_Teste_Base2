@@ -19,7 +19,6 @@ public class Driver {
         options.addArguments("--disable-dev-shm-usage"); // Evita problemas de memória compartilhada
         options.addArguments("--disable-gpu"); // Desativa uso da GPU
         options.addArguments("--window-size=1920,1080");
-
         driver.get("http://mantis-prova.base2.com.br");
         return new ChromeDriver(options);
     }
