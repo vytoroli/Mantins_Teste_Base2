@@ -29,7 +29,6 @@ public class Testes_Tarefas {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         CreateTaskPage createTaskPage = new CreateTaskPage(driver);
-        driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.validateHomePage();
         homePage.Criartarefa();
@@ -46,7 +45,6 @@ public class Testes_Tarefas {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
-        driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.validateHomePage();
         taskPage.verTarefa();
@@ -64,7 +62,6 @@ public class Testes_Tarefas {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
-        driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.buscarTarefa("0002067");
 
@@ -82,7 +79,6 @@ public class Testes_Tarefas {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
-        driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.buscarTarefa("000207");
         homePage.alertaD();
@@ -94,7 +90,6 @@ public class Testes_Tarefas {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
-        driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.verTarefa();
         taskPage.filtroRedefinir();

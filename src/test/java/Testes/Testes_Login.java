@@ -11,7 +11,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class Testes_Login {
-   private WebDriver driver;
+    private WebDriver driver;
 
     @Before
     public void setUp() {
@@ -23,7 +23,6 @@ public class Testes_Login {
     @Test
     public void testLogin_Sem_Sucesso() {
         LoginPage loginPage = new LoginPage(driver);
-        driver.get("http://mantis-prova.base2.com.br");
         loginPage.setUsername("Victor_Costa");
         loginPage.Entrar();
         loginPage.setPassword("vytor@1234");
@@ -33,10 +32,8 @@ public class Testes_Login {
 
     @Test
     public void test_Login_Com_Sucesso() throws InterruptedException {
-
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
-        driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.validateHomePage();
     }
