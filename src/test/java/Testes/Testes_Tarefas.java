@@ -23,9 +23,8 @@ public class Testes_Tarefas {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless","--no-sandbox");
-        options.addEncodedExtensions()
         driver =new ChromeDriver(options);
-        driver.get("http://mantis-prova.base2.com.br");
+//        driver.get("http://mantis-prova.base2.com.br");
 
 
 
