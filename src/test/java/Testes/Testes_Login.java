@@ -7,14 +7,19 @@ import org.openqa.selenium.WebDriver;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 public class Testes_Login {
-    private WebDriver driver;
-
+   // private WebDriver driver;
+   public static WebDriver driver=null;
     @Before
     public void setUp() {
-
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver =new ChromeDriver(options);
+        System.out.println("Depois que o chrome abrir");
 
 
         // driver = Driver.configurarChromeDriver();
