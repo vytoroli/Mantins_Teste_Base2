@@ -11,6 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class LoginPage {
   //  private WebDriver driver;
   public static WebDriver driver=null;
+
     @FindBy(how = How.ID, using = "username")
     private WebElement username;
 

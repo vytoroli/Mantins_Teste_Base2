@@ -17,10 +17,10 @@ public class Testes_Login {
     @Before
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        options.addArguments("--headless","--no-sandbox");
         driver =new ChromeDriver(options);
         System.out.println("Depois que o chrome abrir");
-        driver.get("http://mantis-prova.base2.com.br");
+
 
         // driver = Driver.configurarChromeDriver();
 
