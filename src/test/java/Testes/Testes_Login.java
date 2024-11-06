@@ -16,8 +16,10 @@ public class Testes_Login {
 
     @Before
     public void setUp() {
-        driver = new ChromeDriver();
+        driver = Driver.configurarChromeDriver();
         driver.get("http://mantis-prova.base2.com.br");
+//        driver = new ChromeDriver.();
+//        driver.get("http://mantis-prova.base2.com.br");
 //        Driver wdriver = new Driver();
 //        driver = wdriver.Webdriver();
         // driver = ConfiguracaoWebDriver.configurarChromeDriver();
