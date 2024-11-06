@@ -11,7 +11,7 @@ public class Driver {
 
         // System.setProperty("webdriver.chrome.driver", "/users/victoroliveira/drivers/chromedriver");
         System.setProperty("webdriver.chrome.driver", "/home/runner/work/Martins_Teste_Base2/Martins_Teste_Base2/src/test/java/Drivers/chromedriver");
-        WebDriver driver = new ChromeDriver();
+//        WebDriver driver = new ChromeDriver();
      //   driver.manage().window().maximize();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless"); // Executa em modo headless
@@ -19,7 +19,7 @@ public class Driver {
         options.addArguments("--disable-dev-shm-usage"); // Evita problemas de memória compartilhada
         options.addArguments("--disable-gpu"); // Desativa uso da GPU
         options.addArguments("--window-size=1920,1080");
-        driver.get("http://mantis-prova.base2.com.br");
+//        driver.get("http://mantis-prova.base2.com.br");
         return new ChromeDriver(options);
     }
 }

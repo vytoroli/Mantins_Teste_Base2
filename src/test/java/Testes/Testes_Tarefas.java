@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.assertEquals;
 
@@ -19,8 +20,10 @@ public class Testes_Tarefas {
     @Before
     public void setUp() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
-        Driver wdriver = new Driver();
-        driver = wdriver.Webdriver();
+        driver = new ChromeDriver();
+        driver.get("http://mantis-prova.base2.com.br");
+//        Driver wdriver = new Driver();
+//        driver = wdriver.Webdriver();
 //        driver = ConfiguracaoWebDriver.configurarChromeDriver();
 //        driver.get("http://mantis-prova.base2.com.br");
     }

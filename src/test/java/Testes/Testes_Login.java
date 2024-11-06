@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,9 +16,11 @@ public class Testes_Login {
 
     @Before
     public void setUp() {
-        Driver wdriver = new Driver();
-        driver = wdriver.Webdriver();
-       // driver = ConfiguracaoWebDriver.configurarChromeDriver();
+        driver = new ChromeDriver();
+        driver.get("http://mantis-prova.base2.com.br");
+//        Driver wdriver = new Driver();
+//        driver = wdriver.Webdriver();
+        // driver = ConfiguracaoWebDriver.configurarChromeDriver();
     }
 
     @Test
