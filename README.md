@@ -40,3 +40,16 @@ Rodar no GitbubActions:
 O codigo foi implementado para rodar via CI, porem existem algumas falhas para rodar completamente. 
 3 das 7 rodam corretamente, porem a mensagem retorna como falha.
 Devido ao tempo e outras atividades, não foi possivel identificar o problema.
+
+
+Considerações sobre a ferramenta Mantis:
+
+Encontrei os seguintes problemas:
+Pagina: Criar tarefas
+Após criar tarefa, a pagina é redirecionada automaticamente sem deixar selecionar as opções.
+
+Pagina: Ver Tarefas
+Botão Buscar da pagina de tarefas não especifica o dado buscado
+
+Botão 'Exportação para Excel' exportando xml
+Botão ‘Imprimir Tarefas’. Após clicar, não tem botão para retornar
