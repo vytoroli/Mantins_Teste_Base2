@@ -16,8 +16,12 @@ public class LoginPage {
     @FindBy(how = How.ID, using = "username")
     private WebElement username;
 
-    @FindBy(how = How.CSS, using = "input[value='Entrar']")
+    /*@FindBy(how = How.CSS, using = "input[value='Entrar']")
+    private WebElement Entrar;*/
+
+    @FindBy(how = How.CLASS_NAME, using = "bigger-110")
     private WebElement Entrar;
+
 
     @FindBy(how = How.ID, using = "password")
     private WebElement password;
