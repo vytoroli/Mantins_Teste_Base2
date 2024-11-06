@@ -1,5 +1,4 @@
 package Testes;
-
 import PageObjects.CreateTaskPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
@@ -17,9 +16,10 @@ public class Testes_Tarefas {
     private WebDriver driver;
 
     @Before
-    public void setUp() {
-        // Caminho para o WebDriver do Chrome
+    public void setUp() { //Aqui é iniciado o navegador
         ChromeOptions options = new ChromeOptions();
+        //Aqui é possivel configurar se o teste para o modo de navegador aberto para que o dev acompanhe os passos de forma visivel.
+        //Basta remover o argumento "--headless",
         options.addArguments("--headless","--no-sandbox","--accept-lang=pt-BR");
         driver = new ChromeDriver(options);
 

@@ -1,7 +1,5 @@
 package Testes;
 
-// import Drivers.Driver;
-
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -11,27 +9,17 @@ import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.util.concurrent.TimeUnit;
-
-
 public class Testes_Login {
-    // private WebDriver driver;
     private WebDriver driver;
 
     @Before
-    public void setUp() {
+    public void setUp() { //Aqui é iniciado o navegador
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless","--no-sandbox","--accept-lang=pt-BR");
+        //Aqui é possivel configurar se o teste para o modo de navegador aberto para que o dev acompanhe os passos de forma visivel.
+        //Basta remover o argumento "--headless",
+        options.addArguments("--headless", "--no-sandbox", "--accept-lang=pt-BR");
         driver = new ChromeDriver(options);
         driver.get("http://mantis-prova.base2.com.br");
-
-        // driver = Driver.configurarChromeDriver();
-
-//        driver = new ChromeDriver.();
-//        driver.get("http://mantis-prova.base2.com.br");
-//        Driver wdriver = new Driver();
-//        driver = wdriver.Webdriver();
-        // driver = ConfiguracaoWebDriver.configurarChromeDriver();
     }
 
     @Test
@@ -58,6 +46,5 @@ public class Testes_Login {
     public void tearDown() {
         // Fechar o navegador após o teste
         driver.close();
-
     }
 }

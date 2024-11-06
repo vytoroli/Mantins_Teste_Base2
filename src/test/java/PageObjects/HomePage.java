@@ -1,14 +1,11 @@
 package PageObjects;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
 import static org.junit.Assert.assertEquals;
-
 
 public class HomePage {
     private WebDriver driver;
@@ -24,10 +21,6 @@ public class HomePage {
 
     @FindBy(how = How.CLASS_NAME, using = "alert-danger")
     private WebElement alertaDesativado;
-
-    /*@FindBy(how = How.LINK_TEXT, using = "Criar Tarefa")
-    private WebElement criartarefa;
-*/
 
     @FindBy(how = How.CLASS_NAME, using = "padding-left-8")
     private WebElement criartarefa;
@@ -50,7 +43,7 @@ public class HomePage {
         username.sendKeys(usuario);
     }
 
-    public void validateHomePage() throws InterruptedException {
+    public void validateHomePage() throws InterruptedException { //Aqui valida se a pagina foi carregada completamente para seguir com o teste
         Thread.sleep(5000);
         String expectedUrl = "https://mantis-prova.base2.com.br/my_view_page.php";
         assertEquals(expectedUrl, driver.getCurrentUrl());

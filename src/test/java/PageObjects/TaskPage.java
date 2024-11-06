@@ -1,17 +1,11 @@
 package PageObjects;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-
 public class TaskPage {
     private WebDriver driver;
 
@@ -53,7 +47,7 @@ public class TaskPage {
         filtroRedefinir.click();
     }
 
-    public void validarBusca(String texto) {
+    public void validarBusca(String texto) { //Aqui é realizado a validação de que será apresentado em tela o objeto de busca
         boolean resultado = false;
         List<WebElement> resultados = driver.findElements(By.className("column-summary"));
         for (int i = 0; i < resultados.size(); i++) {
