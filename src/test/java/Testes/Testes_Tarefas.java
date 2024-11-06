@@ -21,7 +21,6 @@ public class Testes_Tarefas {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
 
         driver = Driver.configurarChromeDriver();
-        driver.get("http://mantis-prova.base2.com.br");
 
 //        Driver wdriver = new Driver();
 //        driver = wdriver.Webdriver();
@@ -31,6 +30,7 @@ public class Testes_Tarefas {
 
     @Test
     public void Criar_tarefa() throws InterruptedException {
+        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         CreateTaskPage createTaskPage = new CreateTaskPage(driver);
@@ -47,6 +47,7 @@ public class Testes_Tarefas {
 
     @Test
     public void Ver_Tarefa() throws InterruptedException {
+        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
@@ -64,6 +65,7 @@ public class Testes_Tarefas {
 
     @Test
     public void Buscar_Tarefa_Valida() throws InterruptedException {
+        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
@@ -81,6 +83,7 @@ public class Testes_Tarefas {
 
     @Test
     public void Buscar_Tarefa_Invalida() throws InterruptedException {
+        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
@@ -92,6 +95,7 @@ public class Testes_Tarefas {
 
     @Test
     public void Buscar_Tarefa_Nome() throws InterruptedException {
+        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         TaskPage taskPage = new TaskPage(driver);
