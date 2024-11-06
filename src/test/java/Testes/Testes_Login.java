@@ -27,7 +27,6 @@ public class Testes_Login {
 
     @Test
     public void testLogin_Sem_Sucesso() {
-        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("Victor_Costa");
         loginPage.Entrar();
@@ -38,7 +37,6 @@ public class Testes_Login {
 
     @Test
     public void test_Login_Com_Sucesso() throws InterruptedException {
-        driver.get("http://mantis-prova.base2.com.br");
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
         loginPage.loginSucess("Victor_Costa", "vytor@123");
