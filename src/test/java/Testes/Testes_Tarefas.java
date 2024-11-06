@@ -1,6 +1,7 @@
 package Testes;
 
 import Drivers.ConfiguracaoWebDriver;
+import Drivers.Driver;
 import PageObjects.CreateTaskPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
@@ -19,10 +20,10 @@ public class Testes_Tarefas {
     @Before
     public void setUp() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
-//        Driver wdriver = new Driver();
-//        driver = wdriver.Webdriver();
-        driver = ConfiguracaoWebDriver.configurarChromeDriver();
-        driver.get("http://mantis-prova.base2.com.br");
+        Driver wdriver = new Driver();
+        driver = wdriver.Webdriver();
+//        driver = ConfiguracaoWebDriver.configurarChromeDriver();
+//        driver.get("http://mantis-prova.base2.com.br");
     }
 
     @Test

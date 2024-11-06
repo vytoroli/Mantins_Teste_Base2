@@ -1,6 +1,7 @@
 package Testes;
 
 import Drivers.ConfiguracaoWebDriver;
+import Drivers.Driver;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -15,9 +16,9 @@ public class Testes_Login {
 
     @Before
     public void setUp() {
-//        Driver wdriver = new Driver();
-//        driver = wdriver.Webdriver();
-        driver = ConfiguracaoWebDriver.configurarChromeDriver();
+        Driver wdriver = new Driver();
+        driver = wdriver.Webdriver();
+       // driver = ConfiguracaoWebDriver.configurarChromeDriver();
     }
 
     @Test
