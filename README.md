@@ -49,7 +49,7 @@ Pagina: Criar tarefas
 Após criar tarefa, a pagina é redirecionada automaticamente sem deixar selecionar as opções.
 
 Pagina: Ver Tarefas
-Botão Buscar da pagina de tarefas não especifica o dado buscado
+Botão Buscar da pagina de tarefas não especifica o critério de busca.
 
 Botão 'Exportação para Excel' exportando xml
 Botão ‘Imprimir Tarefas’. Após clicar, não tem botão para retornar
