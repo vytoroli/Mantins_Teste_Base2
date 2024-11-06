@@ -23,7 +23,7 @@ public class Testes_Login {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--lang="+"pt-BR");
         options.addArguments("--headless","--no-sandbox");
-
+        driver = new ChromeDriver(options);
 
 //        options.addArguments("--lang=pt-br", "--headless","--no-sandbox");
 //        driver = new ChromeDriver(options);
