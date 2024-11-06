@@ -10,6 +10,8 @@ import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class Testes_Login {
    // private WebDriver driver;
@@ -45,6 +47,7 @@ public class Testes_Login {
     public void test_Login_Com_Sucesso() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://mantis-prova.base2.com.br");
         loginPage.loginSucess("Victor_Costa", "vytor@123");
         homePage.validateHomePage();
