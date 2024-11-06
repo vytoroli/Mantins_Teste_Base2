@@ -22,6 +22,7 @@ public class Testes_Tarefas {
 //        Driver wdriver = new Driver();
 //        driver = wdriver.Webdriver();
         driver = ConfiguracaoWebDriver.configurarChromeDriver();
+        driver.get("http://mantis-prova.base2.com.br");
     }
 
     @Test
