@@ -23,6 +23,9 @@ Pre-requisito: ter o IndelliJ IDEA. ou um IDE que contenha extensões Java.
  - Selecione um dos arquivos: Testes_login, Testes_Tarefas
  - Para rodar, basta dar Run na classe ou nos metodos especificos. 
 
+
+Segue alguns prints: https://docs.google.com/document/d/1VBMZJQkpRY9Rief0sfIwuC1RgOSIbb2XWxBugmp2v-g/edit?usp=sharing
+
 O codigo esta no modo Headless, porem no codigo tem instruções para ativar o navegador de forma visivel.
 
 Rodar no GitbubActions:
