@@ -15,7 +15,7 @@ public class Driver {
         // WebDriver driver = new ChromeDriver();
         // driver.manage().window().maximize();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless"); // Executa em modo headless
+       // options.addArguments("--headless"); // Executa em modo headless
         options.addArguments("--no-sandbox"); // Necessário em alguns ambientes CI
         options.addArguments("--disable-dev-shm-usage"); // Evita problemas de memória compartilhada
         options.addArguments("--disable-gpu"); // Desativa uso da GPU

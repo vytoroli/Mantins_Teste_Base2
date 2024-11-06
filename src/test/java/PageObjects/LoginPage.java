@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class LoginPage {
     private WebDriver driver;
 
-    @FindBy(how = How.ID, using = "#username")
+    @FindBy(how = How.ID, using = "username")
     private WebElement username;
 
     @FindBy(how = How.CSS, using = "input[value='Entrar']")
@@ -46,7 +46,6 @@ public class LoginPage {
         password.sendKeys(senha);
         Entrar.click();
         Thread.sleep(5000);
-
     }
 
 
