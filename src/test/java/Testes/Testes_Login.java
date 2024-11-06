@@ -1,6 +1,6 @@
 package Testes;
 
-import Drivers.Driver;
+// import Drivers.Driver;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,10 @@ public class Testes_Login {
 
     @Before
     public void setUp() {
-        driver = Driver.configurarChromeDriver();
+
+
+
+        // driver = Driver.configurarChromeDriver();
 
 //        driver = new ChromeDriver.();
 //        driver.get("http://mantis-prova.base2.com.br");

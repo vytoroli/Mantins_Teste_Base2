@@ -1,6 +1,6 @@
 package Testes;
 
-import Drivers.Driver;
+//import Drivers.Driver;
 import PageObjects.CreateTaskPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
@@ -10,17 +10,23 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.Assert.assertEquals;
 
 public class Testes_Tarefas {
-    private WebDriver driver;
+    public static WebDriver driver=null;
 
     @Before
     public void setUp() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver =new ChromeDriver(options);
+        System.out.println("Depois que o chrome abrir");
 
-        driver = Driver.configurarChromeDriver();
+     //   driver = Driver.configurarChromeDriver();
 
 //        Driver wdriver = new Driver();
 //        driver = wdriver.Webdriver();
