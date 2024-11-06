@@ -9,8 +9,8 @@ public class Driver {
 
     public static WebDriver configurarChromeDriver() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
-      //  WebDriverManager.chromedriver().setup();
-        // System.setProperty("webdriver.chrome.driver", "/users/victoroliveira/drivers/chromedriver");
+        WebDriverManager.chromedriver().setup();
+       //  System.setProperty("webdriver.chrome.driver", "selenium.webdriver");
         // System.setProperty("webdriver.chrome.driver", "/home/runner/work/Martins_Teste_Base2/Martins_Teste_Base2/src/test/java/Drivers/chromedriver");
         // WebDriver driver = new ChromeDriver();
         // driver.manage().window().maximize();
