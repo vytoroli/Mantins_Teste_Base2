@@ -13,13 +13,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Testes_Login {
    // private WebDriver driver;
-   public static WebDriver driver=null;
+   public static WebDriver driver;
     @Before
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless","--no-sandbox");
         driver =new ChromeDriver(options);
-        System.out.println("Depois que o chrome abrir");
 
 
         // driver = Driver.configurarChromeDriver();

@@ -1,7 +1,6 @@
 package Testes;
 
 //import Drivers.Driver;
-import Drivers.Driver;
 import PageObjects.CreateTaskPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
@@ -17,18 +16,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import static org.junit.Assert.assertEquals;
 
 public class Testes_Tarefas {
-    public static WebDriver driver=null;
+    public static WebDriver driver;
 
     @Before
     public void setUp() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
-        driver = Driver.configDriver();
-
-      /*  ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless","--no-sandbox");
         driver =new ChromeDriver(options);
-        System.out.println("Depois que o chrome abrir");
-        driver.get("http://mantis-prova.base2.com.br");*/
+        driver.get("http://mantis-prova.base2.com.br");
 
 
 
