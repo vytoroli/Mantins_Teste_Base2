@@ -21,7 +21,7 @@ public class Testes_Login {
     @Before
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments( "--headless","--no-sandbox");
+        options.addArguments( "--headless","--no-sandbox","--lang=br");
         driver = new ChromeDriver(options);
 
 
