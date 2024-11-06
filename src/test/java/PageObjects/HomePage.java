@@ -25,7 +25,11 @@ public class HomePage {
     @FindBy(how = How.CLASS_NAME, using = "alert-danger")
     private WebElement alertaDesativado;
 
-    @FindBy(how = How.LINK_TEXT, using = "Criar Tarefa")
+    /*@FindBy(how = How.LINK_TEXT, using = "Criar Tarefa")
+    private WebElement criartarefa;
+*/
+
+    @FindBy(how = How.CLASS_NAME, using = "padding-left-8")
     private WebElement criartarefa;
 
     @FindBy(how = How.XPATH, using = "//*[contains(text(), ' Ver Tarefas ')]")
