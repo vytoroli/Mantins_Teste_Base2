@@ -9,8 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import static org.junit.Assert.assertEquals;
 
 public class LoginPage {
+    private WebDriver driver;
 
-    @FindBy(how = How.ID, using = "username")
+    @FindBy(how = How.ID, using = "#username")
     private WebElement username;
 
     @FindBy(how = How.CSS, using = "input[value='Entrar']")
@@ -24,6 +25,7 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
+        this.driver = driver;
     }
 
     public void setUsername(String usuario) {
