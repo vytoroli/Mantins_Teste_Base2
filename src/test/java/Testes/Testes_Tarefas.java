@@ -22,6 +22,7 @@ public class Testes_Tarefas {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
         WebDriver driver = new ChromeDriver();
         driver = Driver.configurarChromeDriver();
+        driver.get("http://mantis-prova.base2.com.br");
 
 //        Driver wdriver = new Driver();
 //        driver = wdriver.Webdriver();
