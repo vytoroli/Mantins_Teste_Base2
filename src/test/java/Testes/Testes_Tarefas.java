@@ -1,6 +1,7 @@
 package Testes;
 
 //import Drivers.Driver;
+import Drivers.Driver;
 import PageObjects.CreateTaskPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
@@ -21,11 +22,16 @@ public class Testes_Tarefas {
     @Before
     public void setUp() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
-        ChromeOptions options = new ChromeOptions();
+        driver = Driver.configDriver();
+
+      /*  ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         driver =new ChromeDriver(options);
         System.out.println("Depois que o chrome abrir");
-        driver.get("http://mantis-prova.base2.com.br");
+        driver.get("http://mantis-prova.base2.com.br");*/
+
+
+
      //   driver = Driver.configurarChromeDriver();
 
 //        Driver wdriver = new Driver();
