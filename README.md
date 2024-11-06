@@ -12,7 +12,7 @@ Pasta dos casos de teste: src/test/java/Testes
 
 Pasta dos PageObjects: src/test/java/PageObjects
 
-Para o desafio foi desenvido os seguintes casos de teste:
+Para o desafio foi desenvolvido os seguintes casos de teste:
  - Login com sucesso
  - Login sem sucesso
  - Criar tarefa
@@ -45,11 +45,13 @@ Devido ao tempo e outras atividades, não foi possivel identificar o problema.
 Considerações sobre a ferramenta Mantis:
 
 Encontrei os seguintes problemas:
+
 Pagina: Criar tarefas
-Após criar tarefa, a pagina é redirecionada automaticamente sem deixar selecionar as opções.
+- Após criar tarefa, a pagina é redirecionada automaticamente sem deixar selecionar as opções.
 
 Pagina: Ver Tarefas
-Botão Buscar da pagina de tarefas não especifica o critério de busca.
+- Botão Buscar da pagina de tarefas não especifica o critério de busca.
 
-Botão 'Exportação para Excel' exportando xml
-Botão ‘Imprimir Tarefas’. Após clicar, não tem botão para retornar
+- Botão 'Exportação para Excel' exportando xml
+
+- Botão ‘Imprimir Tarefas’. Após clicar, não tem botão para retornar

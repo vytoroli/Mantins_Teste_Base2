@@ -13,9 +13,6 @@ public class HomePage {
     @FindBy(how = How.ID, using = "username")
     private WebElement username;
 
-    @FindBy(how = How.CSS, using = "input[value='Entrar']")
-    private WebElement Entrar;
-
     @FindBy(how = How.ID, using = "password")
     private WebElement password;
 
