@@ -16,13 +16,13 @@ import java.util.concurrent.TimeUnit;
 
 public class Testes_Login {
     // private WebDriver driver;
-    public static WebDriver driver;
+    private  WebDriver driver;
 
     @Before
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--headless","--no-sandbox","--lang=pt-br");
-        
+
         driver = new ChromeDriver(options);
         driver.get("http://mantis-prova.base2.com.br");
 
