@@ -1,7 +1,5 @@
 package Testes;
 
-//import Drivers.Driver;
-
 import PageObjects.CreateTaskPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
@@ -13,7 +11,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import static org.junit.Assert.assertEquals;
 
 public class Testes_Tarefas {
@@ -21,16 +18,11 @@ public class Testes_Tarefas {
 
     @Before
     public void setUp() {
-        // Caminho para o WebDriver do Chrome (ou outro navegador)
+        // Caminho para o WebDriver do Chrome
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless","--no-sandbox","--accept-lang=pt-BR");
         driver = new ChromeDriver(options);
-        driver.get("http://mantis-prova.base2.com.br");
 
-//        Driver wdriver = new Driver();
-//        driver = wdriver.Webdriver();
-//        driver = ConfiguracaoWebDriver.configurarChromeDriver();
-//        driver.get("http://mantis-prova.base2.com.br");
     }
 
     @Test
@@ -117,6 +109,6 @@ public class Testes_Tarefas {
     public void tearDown() {
         // Fechar o navegador após o teste
         driver.close();
-        //driver.quit();
+
     }
 }

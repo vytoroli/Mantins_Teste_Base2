@@ -58,6 +58,6 @@ public class Testes_Login {
     public void tearDown() {
         // Fechar o navegador após o teste
         driver.close();
-        //driver.quit();
+
     }
 }
