@@ -22,7 +22,8 @@ public class Testes_Tarefas {
     public void setUp() {
         // Caminho para o WebDriver do Chrome (ou outro navegador)
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless","--no-sandbox");
+        options.addArguments("--headless","--no-sandbox","--UTF8");
+        options.
         driver =new ChromeDriver(options);
         driver.get("http://mantis-prova.base2.com.br");
 
