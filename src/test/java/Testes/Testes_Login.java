@@ -23,7 +23,7 @@ public class Testes_Login {
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--headless","--no-sandbox","--lang=br");
         driver = new ChromeDriver(options);
-
+        driver.get("http://mantis-prova.base2.com.br");
 
         // driver = Driver.configurarChromeDriver();
 
