@@ -12,7 +12,7 @@ public class Driver {
         WebDriverManager.chromedriver().setup();
         // System.setProperty("webdriver.chrome.driver", "/users/victoroliveira/drivers/chromedriver");
         // System.setProperty("webdriver.chrome.driver", "/home/runner/work/Martins_Teste_Base2/Martins_Teste_Base2/src/test/java/Drivers/chromedriver");
-        WebDriver driver = new ChromeDriver();
+        // WebDriver driver = new ChromeDriver();
         // driver.manage().window().maximize();
         ChromeOptions options = new ChromeOptions();
        // options.addArguments("--headless"); // Executa em modo headless
