@@ -20,7 +20,7 @@ public class Testes_Login {
         options.addArguments("--headless");
         driver =new ChromeDriver(options);
         System.out.println("Depois que o chrome abrir");
-
+        driver.get("http://mantis-prova.base2.com.br");
 
         // driver = Driver.configurarChromeDriver();
 
