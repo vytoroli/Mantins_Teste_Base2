@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 
 public class LoginPage {
-   private WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(how = How.ID, using = "username")
     private WebElement username;
@@ -53,17 +53,17 @@ public class LoginPage {
     }
 
 
-    /*public void alertaDesativado() {
-        WebElement element = alertaDesativado;
-        String texto = element.getText();
-        assertEquals("Sua conta pode estar desativada ou bloqueada ou o nome de usuário e a senha que você digitou não estão corretos.", texto);
-    }*/
-
     public void alertaDesativado() {
         WebElement element = alertaDesativado;
         String texto = element.getText();
-        assertEquals("Your account may be disabled or blocked or the username/password you entered is incorrect.", texto);
+        assertEquals("Sua conta pode estar desativada ou bloqueada ou o nome de usuário e a senha que você digitou não estão corretos.", texto);
     }
+
+/*    public void alertaDesativado() {
+        WebElement element = alertaDesativado;
+        String texto = element.getText();
+        assertEquals("Your account may be disabled or blocked or the username/password you entered is incorrect.", texto);
+    }*/
 
 
 }
