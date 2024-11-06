@@ -17,12 +17,11 @@ public class Driver {
         ChromeOptions options = new ChromeOptions();
        // options.addArguments("--headless"); // Executa em modo headless
         options.addArguments("--no-sandbox"); // Necessário em alguns ambientes CI
-        options.addArguments("--disable-dev-shm-usage"); // Evita problemas de memória compartilhada
-        options.addArguments("--disable-gpu"); // Desativa uso da GPU
-        options.addArguments("--window-size=1920,1080");
+     //   options.addArguments("--disable-dev-shm-usage"); // Evita problemas de memória compartilhada
+        //options.addArguments("--disable-gpu"); // Desativa uso da GPU
+       // options.addArguments("--window-size=1920,1080");
       /*  WebDriver driver = new ChromeDriver(options);
         driver.get("http://mantis-prova.base2.com.br");*/
-
         return new ChromeDriver(options);
     }
 }
